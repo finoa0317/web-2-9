@@ -21,22 +21,12 @@ $("#unbind").click(function () {
 });
 
   });
-    $(document).ready(function(){
-    
-    $("p").live("click", function(){
-      $(this).after("<p>新たなp要素もクリック！</p>");
-    });
-
-  });
   </script>
   <style>
   button { margin:5px; }
   button#theone { color:red; background:yellow; }
     
-     p { background:yellow; font-weight:bold; cursor:pointer; 
-      padding:5px; }
-  p.over { background: #ccc; }
-  span { color:red; }
+    
   </style>
 </head>
 <body>
@@ -46,7 +36,6 @@ $("#unbind").click(function () {
 <button id="unbind">die</button>
 <div style="display:none;">Click!</div>
   
-  <p>ここをクリック！</p>
-  <span></span>
+
 </body>
 </html>
