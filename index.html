@@ -5,6 +5,10 @@
   <title>はじめてのjQuery</title>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript">
+    
+$(function(){
+  $("p").css("color","red");
+});  
   
 $(function(){
   $("#toggle").on("click",function(){
@@ -16,5 +20,6 @@ $(function(){
 <body>
   <div id="target">表示・非表示される要素</div>
   <button id="toggle">切り替え</button>
+  <p>テスト</p>
 </body>
 </html>
