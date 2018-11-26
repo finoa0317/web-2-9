@@ -10,7 +10,9 @@
         $("#target").fadeTogle("slow");
       });
     });  
-    function aClick() {
+$(document).ready(function(){
+    
+function aClick() {
   $("div").show().fadeOut("slow");
 }
 $("#bind").click(function () {
@@ -21,10 +23,20 @@ $("#unbind").click(function () {
   $("#theone").die("click", aClick)
               .text("何もしない...");
 });
+
+  });
   </script>
+  <style>
+  button { margin:5px; }
+  button#theone { color:red; background:yellow; }
+  </style>
 </head>
 <body>
   <div id="target">表示・非表示される要素</div>
   <button id="toggle">切り替え</button>
+  <button id="theone">何もしない...</button>
+<button id="bind">live</button>
+<button id="unbind">die</button>
+<div style="display:none;">Click!</div>
 </body>
 </html>
