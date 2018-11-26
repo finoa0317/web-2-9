@@ -10,6 +10,17 @@
         $("#target").fadeTogle("slow");
       });
     });  
+    function aClick() {
+  $("div").show().fadeOut("slow");
+}
+$("#bind").click(function () {
+  $("#theone").live("click", aClick)
+              .text("クリック！");
+});
+$("#unbind").click(function () {
+  $("#theone").die("click", aClick)
+              .text("何もしない...");
+});
   </script>
 </head>
 <body>
